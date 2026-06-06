@@ -167,16 +167,7 @@ export default function Hero() {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 rounded-2xl bg-indigo-100 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/20 flex items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
-                <i className="fas fa-database text-indigo-500 text-xl" />
-              </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-2xl bg-purple-100 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
-                <i className="fas fa-brain text-purple-500 text-lg" />
-              </div>
-              <div className="absolute top-1/2 -right-8 w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center animate-float-slow" style={{ animationDelay: '0.5s' }}>
-                <i className="fas fa-code text-blue-500 text-sm" />
-              </div>
+
             </div>
           </div>
         </div>
