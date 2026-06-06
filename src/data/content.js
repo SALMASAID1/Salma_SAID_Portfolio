@@ -31,7 +31,7 @@ export const content = {
       stats: [
         { value: '5+', label: 'Certifications', icon: 'fa-award' },
         { value: '8+', label: 'Projects', icon: 'fa-code-branch' },
-        { value: '3', label: 'Internships', icon: 'fa-briefcase' },
+        { value: '2', label: 'Internships', icon: 'fa-briefcase' },
       ],
     },
     about: {
