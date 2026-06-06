@@ -35,11 +35,11 @@ function SkillCategory({ category }) {
     <div>
       {/* Category Header */}
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-500/10 border border-teal-200/50 dark:border-teal-500/20 flex items-center justify-center">
-          <i className={`fas ${category.icon} text-teal-500`} />
+        <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200/50 dark:border-emerald-500/20 flex items-center justify-center">
+          <i className={`fas ${category.icon} text-emerald-600`} />
         </div>
-        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">{category.name}</h3>
-        <div className="flex-1 h-px bg-gradient-to-r from-teal-200 dark:from-teal-500/20 to-transparent" />
+        <h3 className="text-lg font-bold text-stone-800 dark:text-gray-200">{category.name}</h3>
+        <div className="flex-1 h-px bg-gradient-to-r from-emerald-200 dark:from-emerald-500/20 to-transparent" />
       </div>
 
       {/* Skills Grid */}
@@ -59,12 +59,12 @@ function SkillCategory({ category }) {
                   loading="lazy"
                 />
               ) : (
-                <div className="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-500/10 flex items-center justify-center">
-                  <i className={`fas ${skill.icon} text-lg text-teal-500`} />
+                <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-500/10 flex items-center justify-center">
+                  <i className={`fas ${skill.icon} text-lg text-emerald-600`} />
                 </div>
               )}
             </div>
-            <span className="text-xs font-medium text-gray-600 dark:text-gray-400 text-center group-hover:text-gray-900 dark:group-hover:text-white transition-colors leading-tight">
+            <span className="text-xs font-medium text-stone-600 dark:text-gray-400 text-center group-hover:text-stone-900 dark:group-hover:text-white transition-colors leading-tight">
               {skill.name}
             </span>
           </div>

@@ -16,7 +16,7 @@ export default function Contact() {
           <h2 className="section-title">
             <span className="gradient-text">{t.contact.title}</span>
           </h2>
-          <p className="text-gray-500 dark:text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">
+          <p className="text-stone-500 dark:text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">
             {t.contact.intro}
           </p>
         </div>
@@ -32,12 +32,12 @@ export default function Contact() {
                 rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
                 className="glass-card p-4 flex items-center gap-4 group"
               >
-                <div className="w-11 h-11 rounded-xl bg-teal-50 dark:bg-teal-500/10 border border-teal-200/50 dark:border-teal-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <i className={`fas ${link.icon} text-teal-500`} />
+                <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200/50 dark:border-emerald-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <i className={`fas ${link.icon} text-emerald-600`} />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-xs text-gray-400 dark:text-gray-500 font-medium">{link.label}</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 truncate group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                  <p className="text-xs text-stone-400 dark:text-gray-500 font-medium">{link.label}</p>
+                  <p className="text-sm text-stone-700 dark:text-gray-300 truncate group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
                     {link.value}
                   </p>
                 </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                   href={s.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-11 h-11 rounded-xl glass-card flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-300 hover:-translate-y-1"
+                  className="w-11 h-11 rounded-xl glass-card flex items-center justify-center text-stone-500 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition-all duration-300 hover:-translate-y-1"
                 >
                   <i className={`${s.fab ? 'fab' : 'fas'} ${s.icon}`} />
                 </a>
@@ -77,20 +77,20 @@ export default function Contact() {
             >
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-xs text-gray-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.name}</label>
+                  <label className="block text-xs text-stone-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.name}</label>
                   <input name="name" type="text" required className="input-field" placeholder={t.contact.form.name} />
                 </div>
                 <div>
-                  <label className="block text-xs text-gray-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.email}</label>
+                  <label className="block text-xs text-stone-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.email}</label>
                   <input name="email" type="email" required className="input-field" placeholder={t.contact.form.email} />
                 </div>
               </div>
               <div>
-                <label className="block text-xs text-gray-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.subject}</label>
+                <label className="block text-xs text-stone-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.subject}</label>
                 <input name="subject" type="text" required className="input-field" placeholder={t.contact.form.subject} />
               </div>
               <div>
-                <label className="block text-xs text-gray-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.message}</label>
+                <label className="block text-xs text-stone-500 dark:text-gray-400 font-medium mb-2">{t.contact.form.message}</label>
                 <textarea name="message" required rows={5} className="input-field resize-none" placeholder={t.contact.form.message} />
               </div>
               <button type="submit" className="btn-primary w-full group">
