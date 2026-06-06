@@ -54,12 +54,12 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="group flex items-center gap-2.5"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-700 to-emerald-600 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-emerald-700/25">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-blue-500 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-blue-500/25">
             SS
           </div>
           <span className="font-bold text-lg tracking-wide hidden sm:block">
             <span className="gradient-text">Salma</span>{' '}
-            <span className="text-stone-700 dark:text-white/80">SAID</span>
+            <span className="text-slate-700 dark:text-white/80">SAID</span>
           </span>
         </button>
 
@@ -71,12 +71,12 @@ export default function Navbar() {
               onClick={() => scrollTo(link.id)}
               className={`relative px-3 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
                 active === link.id
-                  ? 'text-emerald-700 dark:text-emerald-400'
-                  : 'text-stone-500 dark:text-gray-400 hover:text-stone-800 dark:hover:text-white'
+                  ? 'text-blue-600 dark:text-blue-400'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white'
               }`}
             >
               {active === link.id && (
-                <span className="absolute inset-0 rounded-lg bg-emerald-50 dark:bg-emerald-500/10" />
+                <span className="absolute inset-0 rounded-lg bg-blue-50 dark:bg-blue-500/10" />
               )}
               <span className="relative">{link.label}</span>
             </button>
@@ -87,13 +87,13 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => toggleLang(lang === 'en' ? 'fr' : 'en')}
-            className="px-3 py-1.5 rounded-lg text-xs font-semibold border border-stone-200 dark:border-gray-700 text-stone-600 dark:text-gray-300 hover:border-emerald-300 dark:hover:border-emerald-500/40 hover:text-emerald-700 dark:hover:text-emerald-400 transition-all duration-300"
+            className="px-3 py-1.5 rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-blue-300 dark:hover:border-blue-500/40 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
           >
             {lang === 'en' ? 'FR' : 'EN'}
           </button>
           <button
             onClick={toggleDark}
-            className="p-2 rounded-lg border border-stone-200 dark:border-gray-700 text-stone-600 dark:text-gray-300 hover:border-emerald-300 dark:hover:border-emerald-500/40 hover:text-emerald-700 dark:hover:text-emerald-400 transition-all duration-300"
+            className="p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-blue-300 dark:hover:border-blue-500/40 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
           >
             <i className={`fas ${dark ? 'fa-sun' : 'fa-moon'} text-sm`} />
           </button>
@@ -101,14 +101,14 @@ export default function Navbar() {
             href="./salma-said-cv.pdf"
             target="_blank"
             rel="noreferrer"
-            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-emerald-700 to-emerald-600 text-white shadow-lg shadow-emerald-700/25 hover:shadow-xl hover:shadow-emerald-600/30 transition-all duration-300 hover:-translate-y-0.5"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 hover:-translate-y-0.5"
           >
             <i className="fas fa-download text-xs" />
             {t.nav.cv}
           </a>
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 rounded-lg border border-stone-200 dark:border-gray-700 text-stone-600 dark:text-gray-300 transition-all"
+            className="lg:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 transition-all"
           >
             <i className={`fas ${open ? 'fa-times' : 'fa-bars'}`} />
           </button>
@@ -128,8 +128,8 @@ export default function Navbar() {
               onClick={() => scrollTo(link.id)}
               className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                 active === link.id
-                  ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-500/10'
-                  : 'text-stone-500 dark:text-gray-400 hover:text-stone-800 dark:hover:text-white hover:bg-stone-50 dark:hover:bg-white/[0.04]'
+                  ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-500/10'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-white/[0.04]'
               }`}
             >
               {link.label}

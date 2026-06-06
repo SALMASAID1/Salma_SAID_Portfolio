@@ -33,16 +33,14 @@ function SkillCategory({ category }) {
 
   return (
     <div>
-      {/* Category Header */}
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200/50 dark:border-emerald-500/20 flex items-center justify-center">
-          <i className={`fas ${category.icon} text-emerald-600`} />
+        <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200/50 dark:border-blue-500/20 flex items-center justify-center">
+          <i className={`fas ${category.icon} text-blue-500`} />
         </div>
-        <h3 className="text-lg font-bold text-stone-800 dark:text-gray-200">{category.name}</h3>
-        <div className="flex-1 h-px bg-gradient-to-r from-emerald-200 dark:from-emerald-500/20 to-transparent" />
+        <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200">{category.name}</h3>
+        <div className="flex-1 h-px bg-gradient-to-r from-blue-200 dark:from-blue-500/20 to-transparent" />
       </div>
 
-      {/* Skills Grid */}
       <div ref={groupRef} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
         {category.items.map((skill, j) => (
           <div
@@ -59,12 +57,12 @@ function SkillCategory({ category }) {
                   loading="lazy"
                 />
               ) : (
-                <div className="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-500/10 flex items-center justify-center">
-                  <i className={`fas ${skill.icon} text-lg text-emerald-600`} />
+                <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center">
+                  <i className={`fas ${skill.icon} text-lg text-blue-500`} />
                 </div>
               )}
             </div>
-            <span className="text-xs font-medium text-stone-600 dark:text-gray-400 text-center group-hover:text-stone-900 dark:group-hover:text-white transition-colors leading-tight">
+            <span className="text-xs font-medium text-slate-600 dark:text-slate-400 text-center group-hover:text-slate-900 dark:group-hover:text-white transition-colors leading-tight">
               {skill.name}
             </span>
           </div>

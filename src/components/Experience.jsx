@@ -9,7 +9,6 @@ export default function Experience() {
   return (
     <section id="experience" className="relative">
       <div className="section-container" ref={sectionRef}>
-        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="section-tag">
             <i className="fas fa-briefcase text-xs" />
@@ -20,7 +19,6 @@ export default function Experience() {
           </h2>
         </div>
 
-        {/* Timeline */}
         <div className="relative max-w-4xl mx-auto" ref={timelineRef}>
           <div className="timeline-line" />
 
@@ -38,18 +36,18 @@ export default function Experience() {
                 <div className="glass-card p-6 group">
                   <div className="flex items-start justify-between mb-3 gap-3">
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">
+                      <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                         {item.title}
                       </h3>
-                      <p className="text-emerald-700 dark:text-emerald-400 text-sm font-medium">{item.company}</p>
+                      <p className="text-blue-600 dark:text-blue-400 text-sm font-medium">{item.company}</p>
                     </div>
-                    <span className="text-xs font-mono text-stone-400 dark:text-gray-500 bg-stone-100 dark:bg-white/[0.06] px-3 py-1 rounded-full whitespace-nowrap">
+                    <span className="text-xs font-mono text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-white/[0.06] px-3 py-1 rounded-full whitespace-nowrap">
                       {item.date}
                     </span>
                   </div>
 
                   {item.focus && (
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-50 dark:bg-amber-500/10 border border-amber-200/50 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 mb-3">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-500/10 border border-slate-200/50 dark:border-slate-500/20 text-slate-600 dark:text-slate-400 mb-3">
                       <i className="fas fa-crosshairs text-[10px]" />
                       {item.focus}
                     </div>
@@ -57,8 +55,8 @@ export default function Experience() {
 
                   <ul className="space-y-2 mb-4">
                     {item.points.map((point, j) => (
-                      <li key={j} className="flex items-start gap-2.5 text-sm text-stone-600 dark:text-gray-400">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-emerald-600 to-amber-500 flex-shrink-0" />
+                      <li key={j} className="flex items-start gap-2.5 text-sm text-slate-600 dark:text-slate-400">
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
                         {point}
                       </li>
                     ))}

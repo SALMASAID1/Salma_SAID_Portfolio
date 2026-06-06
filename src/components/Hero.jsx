@@ -50,26 +50,26 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-stone-50 via-emerald-50/30 to-amber-50/20 dark:from-gray-950 dark:via-emerald-950/20 dark:to-amber-950/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/20 to-slate-100/30 dark:from-gray-950 dark:via-blue-950/10 dark:to-slate-950/10" />
 
       {/* Grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.03] dark:opacity-[0.04]"
         style={{
-          backgroundImage: `radial-gradient(circle, #059669 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle, #3b82f6 1px, transparent 1px)`,
           backgroundSize: '40px 40px',
         }}
       />
 
       {/* Gradient orbs */}
-      <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-emerald-400/10 dark:bg-emerald-500/[0.08] blur-[80px] animate-float" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-amber-400/10 dark:bg-amber-500/[0.06] blur-[100px] animate-float-slow" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-blue-400/8 dark:bg-blue-500/[0.06] blur-[80px] animate-float" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-slate-400/8 dark:bg-slate-500/[0.05] blur-[100px] animate-float-slow" style={{ animationDelay: '3s' }} />
 
       {/* Particles */}
       {particles.map((p) => (
         <div
           key={p.id}
-          className="absolute rounded-full bg-emerald-400/30 dark:bg-emerald-400/20 animate-float"
+          className="absolute rounded-full bg-blue-400/20 dark:bg-blue-400/15 animate-float"
           style={{
             left: p.left,
             top: p.top,
@@ -86,7 +86,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Text */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <p className="text-emerald-700 dark:text-emerald-400 text-sm md:text-base font-medium mb-4 tracking-wide uppercase">
+            <p className="text-blue-600 dark:text-blue-400 text-sm md:text-base font-medium mb-4 tracking-wide uppercase">
               {t.hero.greeting}
             </p>
 
@@ -96,14 +96,14 @@ export default function Hero() {
 
             {/* Typing title */}
             <div className="h-8 md:h-10 flex items-center justify-center lg:justify-start mb-6">
-              <span className="text-lg md:text-xl font-medium text-amber-600 dark:text-amber-400">
+              <span className="text-lg md:text-xl font-medium text-slate-500 dark:text-slate-400">
                 {displayText}
               </span>
               <span className="typing-cursor" />
             </div>
 
             {/* Headline */}
-            <p className="text-stone-600 dark:text-gray-400 text-base md:text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
               {t.hero.headline}
             </p>
 
@@ -135,7 +135,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/salma-said-7737b9296/"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-xl bg-stone-100 dark:bg-white/[0.06] border border-stone-200 dark:border-white/[0.08] flex items-center justify-center text-stone-500 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-300 dark:hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1"
+                className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/[0.06] border border-slate-200 dark:border-white/[0.08] flex items-center justify-center text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1"
               >
                 <i className="fab fa-linkedin-in" />
               </a>
@@ -143,13 +143,13 @@ export default function Hero() {
                 href="https://github.com/SALMASAID1"
                 target="_blank"
                 rel="noreferrer"
-                className="w-10 h-10 rounded-xl bg-stone-100 dark:bg-white/[0.06] border border-stone-200 dark:border-white/[0.08] flex items-center justify-center text-stone-500 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-300 dark:hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1"
+                className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/[0.06] border border-slate-200 dark:border-white/[0.08] flex items-center justify-center text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1"
               >
                 <i className="fab fa-github" />
               </a>
               <a
                 href="mailto:salma2003said@gmail.com"
-                className="w-10 h-10 rounded-xl bg-stone-100 dark:bg-white/[0.06] border border-stone-200 dark:border-white/[0.08] flex items-center justify-center text-stone-500 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-300 dark:hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1"
+                className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-white/[0.06] border border-slate-200 dark:border-white/[0.08] flex items-center justify-center text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1"
               >
                 <i className="fas fa-envelope" />
               </a>
@@ -160,7 +160,7 @@ export default function Hero() {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative">
               {/* Image container */}
-              <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-[2rem] overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl bg-stone-100 dark:bg-gray-900">
+              <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-[2rem] overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl bg-slate-100 dark:bg-gray-900">
                 <img
                   src="./salma-profile.jpg"
                   alt="Salma SAID"
@@ -177,10 +177,10 @@ export default function Hero() {
           {t.hero.stats.map((stat, i) => (
             <div key={i} className="text-center lg:text-left group">
               <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
-                <i className={`fas ${stat.icon} text-amber-500 text-sm`} />
+                <i className={`fas ${stat.icon} text-blue-500 text-sm`} />
                 <span className="text-2xl md:text-3xl font-bold gradient-text">{stat.value}</span>
               </div>
-              <span className="text-stone-500 dark:text-gray-400 text-sm">{stat.label}</span>
+              <span className="text-slate-500 dark:text-slate-400 text-sm">{stat.label}</span>
             </div>
           ))}
         </div>
@@ -188,9 +188,9 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-stone-400 dark:text-gray-500 text-xs font-medium tracking-widest uppercase">Scroll</span>
-        <div className="w-5 h-8 rounded-full border-2 border-stone-300 dark:border-gray-600 flex justify-center pt-2">
-          <div className="w-1 h-2 rounded-full bg-emerald-500 animate-bounce" />
+        <span className="text-slate-400 dark:text-slate-500 text-xs font-medium tracking-widest uppercase">Scroll</span>
+        <div className="w-5 h-8 rounded-full border-2 border-slate-300 dark:border-slate-600 flex justify-center pt-2">
+          <div className="w-1 h-2 rounded-full bg-blue-500 animate-bounce" />
         </div>
       </div>
     </section>
