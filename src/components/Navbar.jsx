@@ -54,7 +54,7 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="group flex items-center gap-2.5"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-indigo-500/25">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-600 to-cyan-700 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-teal-500/25">
             SS
           </div>
           <span className="font-bold text-lg tracking-wide hidden sm:block">
@@ -71,12 +71,12 @@ export default function Navbar() {
               onClick={() => scrollTo(link.id)}
               className={`relative px-3 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
                 active === link.id
-                  ? 'text-indigo-600 dark:text-indigo-400'
+                  ? 'text-teal-600 dark:text-teal-400'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white'
               }`}
             >
               {active === link.id && (
-                <span className="absolute inset-0 rounded-lg bg-indigo-50 dark:bg-indigo-500/10" />
+                <span className="absolute inset-0 rounded-lg bg-teal-50 dark:bg-teal-500/10" />
               )}
               <span className="relative">{link.label}</span>
             </button>
@@ -87,13 +87,13 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => toggleLang(lang === 'en' ? 'fr' : 'en')}
-            className="px-3 py-1.5 rounded-lg text-xs font-semibold border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300"
+            className="px-3 py-1.5 rounded-lg text-xs font-semibold border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-teal-300 dark:hover:border-teal-500/40 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-300"
           >
             {lang === 'en' ? 'FR' : 'EN'}
           </button>
           <button
             onClick={toggleDark}
-            className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300"
+            className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-teal-300 dark:hover:border-teal-500/40 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-300"
           >
             <i className={`fas ${dark ? 'fa-sun' : 'fa-moon'} text-sm`} />
           </button>
@@ -101,7 +101,7 @@ export default function Navbar() {
             href="./salma-said-cv.pdf"
             target="_blank"
             rel="noreferrer"
-            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-300 hover:-translate-y-0.5"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-teal-600 to-cyan-700 text-white shadow-lg shadow-teal-500/25 hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 hover:-translate-y-0.5"
           >
             <i className="fas fa-download text-xs" />
             {t.nav.cv}
@@ -128,7 +128,7 @@ export default function Navbar() {
               onClick={() => scrollTo(link.id)}
               className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                 active === link.id
-                  ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-500/10'
+                  ? 'text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-500/10'
                   : 'text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/[0.04]'
               }`}
             >

@@ -25,7 +25,7 @@ export default function About() {
             {t.about.summary.map((p, i) => (
               <p
                 key={i}
-                className="text-gray-600 dark:text-gray-400 leading-relaxed text-base [&_strong]:text-indigo-600 dark:[&_strong]:text-indigo-400 [&_strong]:font-semibold"
+                className="text-gray-600 dark:text-gray-400 leading-relaxed text-base [&_strong]:text-teal-600 dark:[&_strong]:text-teal-400 [&_strong]:font-semibold"
                 dangerouslySetInnerHTML={{ __html: p }}
               />
             ))}
@@ -37,8 +37,8 @@ export default function About() {
               <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">Quick Info</h3>
               {t.about.details.map((d, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center flex-shrink-0">
-                    <i className={`fas ${d.icon} text-indigo-500 text-sm`} />
+                  <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-500/10 flex items-center justify-center flex-shrink-0">
+                    <i className={`fas ${d.icon} text-teal-500 text-sm`} />
                   </div>
                   <div>
                     <p className="text-xs text-gray-400 dark:text-gray-500 font-medium uppercase tracking-wide">{d.label}</p>

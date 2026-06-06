@@ -38,10 +38,10 @@ export default function Experience() {
                 <div className="glass-card p-6 group">
                   <div className="flex items-start justify-between mb-3 gap-3">
                     <div>
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                         {item.title}
                       </h3>
-                      <p className="text-indigo-600 dark:text-indigo-400 text-sm font-medium">{item.company}</p>
+                      <p className="text-teal-600 dark:text-teal-400 text-sm font-medium">{item.company}</p>
                     </div>
                     <span className="text-xs font-mono text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-white/[0.06] px-3 py-1 rounded-full whitespace-nowrap">
                       {item.date}
@@ -49,7 +49,7 @@ export default function Experience() {
                   </div>
 
                   {item.focus && (
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-purple-50 dark:bg-purple-500/10 border border-purple-200/50 dark:border-purple-500/20 text-purple-600 dark:text-purple-400 mb-3">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-50 dark:bg-slate-500/10 border border-slate-200/50 dark:border-slate-500/20 text-slate-600 dark:text-slate-400 mb-3">
                       <i className="fas fa-crosshairs text-[10px]" />
                       {item.focus}
                     </div>
@@ -58,7 +58,7 @@ export default function Experience() {
                   <ul className="space-y-2 mb-4">
                     {item.points.map((point, j) => (
                       <li key={j} className="flex items-start gap-2.5 text-sm text-gray-600 dark:text-gray-400">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex-shrink-0" />
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-teal-500 to-cyan-600 flex-shrink-0" />
                         {point}
                       </li>
                     ))}

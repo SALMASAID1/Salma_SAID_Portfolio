@@ -35,11 +35,11 @@ function SkillCategory({ category }) {
     <div>
       {/* Category Header */}
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200/50 dark:border-indigo-500/20 flex items-center justify-center">
-          <i className={`fas ${category.icon} text-indigo-500`} />
+        <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-500/10 border border-teal-200/50 dark:border-teal-500/20 flex items-center justify-center">
+          <i className={`fas ${category.icon} text-teal-500`} />
         </div>
         <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200">{category.name}</h3>
-        <div className="flex-1 h-px bg-gradient-to-r from-indigo-200 dark:from-indigo-500/20 to-transparent" />
+        <div className="flex-1 h-px bg-gradient-to-r from-teal-200 dark:from-teal-500/20 to-transparent" />
       </div>
 
       {/* Skills Grid */}
@@ -59,8 +59,8 @@ function SkillCategory({ category }) {
                   loading="lazy"
                 />
               ) : (
-                <div className="w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center">
-                  <i className={`fas ${skill.icon} text-lg text-indigo-500`} />
+                <div className="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-500/10 flex items-center justify-center">
+                  <i className={`fas ${skill.icon} text-lg text-teal-500`} />
                 </div>
               )}
             </div>

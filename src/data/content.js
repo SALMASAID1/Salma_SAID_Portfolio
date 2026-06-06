@@ -316,7 +316,7 @@ export const content = {
           title: 'SQL et Bases de Données 101',
           desc: 'Certification de Base',
           issuer: 'IBM SkillsBuild',
-          color: 'from-indigo-500 to-blue-500',
+          color: 'from-teal-500 to-cyan-500',
           icon: 'fa-database',
           link: 'https://courses.skillsbuild.skillsnetwork.site/certificates/cba9db5908e84d5a930ce014423f3a14'
         },

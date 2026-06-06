@@ -32,12 +32,12 @@ export default function Contact() {
                 rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
                 className="glass-card p-4 flex items-center gap-4 group"
               >
-                <div className="w-11 h-11 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200/50 dark:border-indigo-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <i className={`fas ${link.icon} text-indigo-500`} />
+                <div className="w-11 h-11 rounded-xl bg-teal-50 dark:bg-teal-500/10 border border-teal-200/50 dark:border-teal-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <i className={`fas ${link.icon} text-teal-500`} />
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs text-gray-400 dark:text-gray-500 font-medium">{link.label}</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 truncate group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  <p className="text-sm text-gray-700 dark:text-gray-300 truncate group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                     {link.value}
                   </p>
                 </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                   href={s.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-11 h-11 rounded-xl glass-card flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 hover:-translate-y-1"
+                  className="w-11 h-11 rounded-xl glass-card flex items-center justify-center text-gray-500 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-all duration-300 hover:-translate-y-1"
                 >
                   <i className={`${s.fab ? 'fab' : 'fas'} ${s.icon}`} />
                 </a>
