@@ -284,7 +284,7 @@ export const content = {
           title: 'Deep Learning avec TensorFlow 2',
           desc: 'Certification Complète',
           issuer: '365 Data Science',
-          color: 'from-emerald-500 to-amber-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-brain',
           link: 'https://learn.365datascience.com/certificates/CC-119BFDD33B/'
         },
@@ -292,7 +292,7 @@ export const content = {
           title: 'Machine Learning avec Python',
           desc: 'Certification Complète',
           issuer: '365 Data Science',
-          color: 'from-emerald-500 to-amber-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-laptop-code',
           link: 'https://learn.365datascience.com/certificates/CC-62AB92E1F1/'
         },
@@ -300,7 +300,7 @@ export const content = {
           title: 'LLM Engineering en Pratique',
           desc: 'Streamlit et OpenAI',
           issuer: '365 Data Science',
-          color: 'from-emerald-500 to-amber-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-robot',
           link: 'https://learn.365datascience.com/certificates/CC-5DC2592C78/'
         },
@@ -308,7 +308,7 @@ export const content = {
           title: 'Ingénieur Data Associé',
           desc: 'Certification Professionnelle',
           issuer: 'DataCamp',
-          color: 'from-emerald-500 to-green-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-cogs',
           link: 'https://www.datacamp.com/certificate/DEA0011781901407'
         },
@@ -316,7 +316,7 @@ export const content = {
           title: 'SQL et Bases de Données 101',
           desc: 'Certification de Base',
           issuer: 'IBM SkillsBuild',
-          color: 'from-emerald-500 to-green-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-database',
           link: 'https://courses.skillsbuild.skillsnetwork.site/certificates/cba9db5908e84d5a930ce014423f3a14'
         },
@@ -620,14 +620,14 @@ export const content = {
           title: 'Deep Learning avec TensorFlow 2',
           desc: 'Certification Complète',
           issuer: '365 Data Science',
-          color: 'from-emerald-500 to-amber-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-brain',
         },
         {
           title: 'Ingénieur Data Associé',
           desc: 'Certification Professionnelle',
           issuer: 'DataCamp',
-          color: 'from-emerald-500 to-green-500',
+          color: 'from-blue-500 to-slate-500',
           icon: 'fa-cogs',
         },
       ],
