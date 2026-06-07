@@ -378,7 +378,7 @@ export const content = {
       stats: [
         { value: '5+', label: 'Certifications', icon: 'fa-award' },
         { value: '8+', label: 'Projets', icon: 'fa-code-branch' },
-        { value: '3', label: 'Stages', icon: 'fa-briefcase' },
+        { value: '2', label: 'Stages', icon: 'fa-briefcase' },
       ],
     },
     about: {
