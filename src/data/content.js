@@ -258,7 +258,7 @@ export const content = {
         },
         {
           title: 'Oracle Cloud Database Services',
-          desc: '2025 Professionnel',
+          desc: '2025 Professional',
           issuer: 'Oracle',
           color: 'from-red-500 to-orange-500',
           icon: 'fa-database',
@@ -274,49 +274,49 @@ export const content = {
         },
         {
           title: 'Oracle Cloud Infrastructure',
-          desc: '2025 Data Science Professional',
+          desc: '2025 Certified Data Science Professional',
           issuer: 'Oracle',
           color: 'from-red-500 to-orange-500',
           icon: 'fa-brain',
           link: 'https://drive.google.com/file/d/1U1D2W6U12t_e1le4feOV-lMleayjxtOQ/view?usp=sharing'
         },
         {
-          title: 'Deep Learning avec TensorFlow 2',
-          desc: 'Certification Complète',
+          title: 'Deep Learning with TensorFlow 2',
+          desc: 'Complete Certification',
           issuer: '365 Data Science',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-blue-500 to-cyan-500',
           icon: 'fa-brain',
           link: 'https://learn.365datascience.com/certificates/CC-119BFDD33B/'
         },
         {
-          title: 'Machine Learning avec Python',
-          desc: 'Certification Complète',
+          title: 'Machine Learning in Python',
+          desc: 'Complete Certification',
           issuer: '365 Data Science',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-blue-500 to-cyan-500',
           icon: 'fa-laptop-code',
           link: 'https://learn.365datascience.com/certificates/CC-62AB92E1F1/'
         },
         {
-          title: 'LLM Engineering en Pratique',
-          desc: 'Streamlit et OpenAI',
+          title: 'LLM Engineering in Practice',
+          desc: 'Streamlit and OpenAI',
           issuer: '365 Data Science',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-blue-500 to-cyan-500',
           icon: 'fa-robot',
           link: 'https://learn.365datascience.com/certificates/CC-5DC2592C78/'
         },
         {
-          title: 'Ingénieur Data Associé',
-          desc: 'Certification Professionnelle',
+          title: 'Associate Data Engineer',
+          desc: 'Professional Certification',
           issuer: 'DataCamp',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-emerald-500 to-green-500',
           icon: 'fa-cogs',
           link: 'https://www.datacamp.com/certificate/DEA0011781901407'
         },
         {
-          title: 'SQL et Bases de Données 101',
-          desc: 'Certification de Base',
+          title: 'SQL and Relational Databases 101',
+          desc: 'Foundational Certification',
           issuer: 'IBM SkillsBuild',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-indigo-500 to-blue-500',
           icon: 'fa-database',
           link: 'https://courses.skillsbuild.skillsnetwork.site/certificates/cba9db5908e84d5a930ce014423f3a14'
         },
@@ -601,6 +601,7 @@ export const content = {
           issuer: 'Oracle',
           color: 'from-red-500 to-orange-500',
           icon: 'fa-certificate',
+          link: 'https://drive.google.com/file/d/16E4BoLmEUePhy7nb0QWRwk2-hqi5j65s/view?usp=sharing'
         },
         {
           title: 'Oracle Cloud Database Services',
@@ -608,6 +609,7 @@ export const content = {
           issuer: 'Oracle',
           color: 'from-red-500 to-orange-500',
           icon: 'fa-database',
+          link: 'https://drive.google.com/file/d/1butD50sso6Xx-QhMLTZGEWuOeQQnJp4I/view?usp=sharing'
         },
         {
           title: 'Oracle Cloud AI Foundations',
@@ -615,20 +617,55 @@ export const content = {
           issuer: 'Oracle',
           color: 'from-red-500 to-orange-500',
           icon: 'fa-cloud',
+          link: 'https://drive.google.com/file/d/1ihDSYtbkIhF1DVvEd1uyWCodt0vHnH6p/view?usp=sharing'
+        },
+        {
+          title: 'Oracle Cloud Infrastructure',
+          desc: '2025 Data Science Professional',
+          issuer: 'Oracle',
+          color: 'from-red-500 to-orange-500',
+          icon: 'fa-brain',
+          link: 'https://drive.google.com/file/d/1U1D2W6U12t_e1le4feOV-lMleayjxtOQ/view?usp=sharing'
         },
         {
           title: 'Deep Learning avec TensorFlow 2',
           desc: 'Certification Complète',
           issuer: '365 Data Science',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-blue-500 to-cyan-500',
           icon: 'fa-brain',
+          link: 'https://learn.365datascience.com/certificates/CC-119BFDD33B/'
+        },
+        {
+          title: 'Machine Learning avec Python',
+          desc: 'Certification Complète',
+          issuer: '365 Data Science',
+          color: 'from-blue-500 to-cyan-500',
+          icon: 'fa-laptop-code',
+          link: 'https://learn.365datascience.com/certificates/CC-62AB92E1F1/'
+        },
+        {
+          title: 'LLM Engineering en Pratique',
+          desc: 'Streamlit et OpenAI',
+          issuer: '365 Data Science',
+          color: 'from-blue-500 to-cyan-500',
+          icon: 'fa-robot',
+          link: 'https://learn.365datascience.com/certificates/CC-5DC2592C78/'
         },
         {
           title: 'Ingénieur Data Associé',
           desc: 'Certification Professionnelle',
           issuer: 'DataCamp',
-          color: 'from-blue-500 to-slate-500',
+          color: 'from-emerald-500 to-green-500',
           icon: 'fa-cogs',
+          link: 'https://www.datacamp.com/certificate/DEA0011781901407'
+        },
+        {
+          title: 'SQL et Bases de Données 101',
+          desc: 'Certification de Base',
+          issuer: 'IBM SkillsBuild',
+          color: 'from-indigo-500 to-blue-500',
+          icon: 'fa-database',
+          link: 'https://courses.skillsbuild.skillsnetwork.site/certificates/cba9db5908e84d5a930ce014423f3a14'
         },
       ],
     },

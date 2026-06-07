@@ -1,6 +1,6 @@
 import re
 
-with open('/home/chicken/portfoliosalmasaid/src/data/content.js', 'r') as f:
+with open('src/data/content.js', 'r', encoding='utf-8') as f:
     content = f.read()
 
 # Replace en certifications
@@ -282,25 +282,29 @@ fr_proj_items = """      items: [
 
 import re
 
-# We can replace everything inside `items: [...]` for each block.
-# Since it's exactly 2 `certifications:` and 2 `projects:` blocks.
+# Split the content into English and French blocks to avoid regex duplicate match collision
+parts = content.split("/* ====== FRENCH ====== */")
+en_part = parts[0]
+fr_part = parts[1]
 
 # 1. EN Projects
 pattern_en_proj = r"projects: \{[\s\S]*?items: \[([\s\S]*?)\],\s*code: 'GitHub'"
-content = re.sub(pattern_en_proj, "projects: {\n      tag: 'Projects',\n      title: 'Featured Projects',\n      filters: ['All', 'AI & ML', 'Data Engineering'],\n" + en_proj_items + "\n      code: 'GitHub'", content, count=1)
+en_part = re.sub(pattern_en_proj, "projects: {\n      tag: 'Projects',\n      title: 'Featured Projects',\n      filters: ['All', 'AI & ML', 'Data Engineering'],\n" + en_proj_items + "\n      code: 'GitHub'", en_part, count=1)
 
 # 2. EN Certifications
 pattern_en_cert = r"certifications: \{\s*tag: 'Certifications',\s*title: 'Certifications',\s*items: \[([\s\S]*?)\],\s*\},\s*contact:"
-content = re.sub(pattern_en_cert, "certifications: {\n      tag: 'Certifications',\n      title: 'Certifications',\n" + en_cert_items + "\n    },\n    contact:", content, count=1)
+en_part = re.sub(pattern_en_cert, "certifications: {\n      tag: 'Certifications',\n      title: 'Certifications',\n" + en_cert_items + "\n    },\n    contact:", en_part, count=1)
 
 # 3. FR Projects
 pattern_fr_proj = r"projects: \{\s*tag: 'Projets',\s*title: 'Projets Réalisés',\s*filters: \['Tous', 'IA & ML', 'Data Engineering'\],\s*items: \[([\s\S]*?)\],\s*code: 'GitHub'"
-content = re.sub(pattern_fr_proj, "projects: {\n      tag: 'Projets',\n      title: 'Projets Réalisés',\n      filters: ['Tous', 'IA & ML', 'Data Engineering'],\n" + fr_proj_items + "\n      code: 'GitHub'", content, count=1)
+fr_part = re.sub(pattern_fr_proj, "projects: {\n      tag: 'Projets',\n      title: 'Projets Réalisés',\n      filters: ['Tous', 'IA & ML', 'Data Engineering'],\n" + fr_proj_items + "\n      code: 'GitHub'", fr_part, count=1)
 
 # 4. FR Certifications
 pattern_fr_cert = r"certifications: \{\s*tag: 'Certifications',\s*title: 'Certifications',\s*items: \[([\s\S]*?)\],\s*\},\s*contact:"
-content = re.sub(pattern_fr_cert, "certifications: {\n      tag: 'Certifications',\n      title: 'Certifications',\n" + fr_cert_items + "\n    },\n    contact:", content, count=1)
+fr_part = re.sub(pattern_fr_cert, "certifications: {\n      tag: 'Certifications',\n      title: 'Certifications',\n" + fr_cert_items + "\n    },\n    contact:", fr_part, count=1)
 
-with open('/home/chicken/portfoliosalmasaid/src/data/content.js', 'w') as f:
+content = "/* ====== FRENCH ====== */".join([en_part, fr_part])
+
+with open('src/data/content.js', 'w', encoding='utf-8') as f:
     f.write(content)
 
