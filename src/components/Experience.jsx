@@ -19,44 +19,27 @@ export default function Experience() {
           </h2>
         </div>
 
-        <div className="relative max-w-4xl mx-auto" ref={timelineRef}>
-          <div className="timeline-line" />
-
-          <div className="space-y-12">
+        <div className="mx-auto max-w-4xl" ref={timelineRef}>
+          <div className="divide-y divide-slate-200 border-y border-slate-200 dark:divide-slate-800 dark:border-slate-800">
             {t.experience.items.map((item, i) => (
               <div
                 key={i}
                 data-animate
-                className={`relative pl-12 md:pl-0 md:w-1/2 ${
-                  i % 2 === 0 ? 'md:pr-12 md:ml-0' : 'md:pl-12 md:ml-auto'
-                }`}
+                className="grid gap-5 py-9 md:grid-cols-[180px_1fr] md:gap-10"
               >
-                <div className="timeline-dot" />
-
-                <div className="glass-card p-6 group">
-                  <div className="flex items-start justify-between mb-3 gap-3">
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-blue-600 dark:text-blue-400 text-sm font-medium">{item.company}</p>
-                    </div>
-                    <span className="text-xs font-mono text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-white/[0.06] px-3 py-1 rounded-full whitespace-nowrap">
-                      {item.date}
-                    </span>
+                <div>
+                  <span className="font-mono text-xs text-slate-500 dark:text-slate-400">{item.date}</span>
+                  <p className="mt-2 text-sm font-semibold text-teal-700 dark:text-teal-400">{item.company}</p>
+                </div>
+                <div>
+                  <div className="mb-3">
+                    <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">{item.title}</h3>
+                    {item.focus && <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{item.focus}</p>}
                   </div>
-
-                  {item.focus && (
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-500/10 border border-slate-200/50 dark:border-slate-500/20 text-slate-600 dark:text-slate-400 mb-3">
-                      <i className="fas fa-crosshairs text-[10px]" />
-                      {item.focus}
-                    </div>
-                  )}
-
                   <ul className="space-y-2 mb-4">
                     {item.points.map((point, j) => (
                       <li key={j} className="flex items-start gap-2.5 text-sm text-slate-600 dark:text-slate-400">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
+                        <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-teal-600" />
                         {point}
                       </li>
                     ))}

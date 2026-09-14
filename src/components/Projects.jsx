@@ -37,8 +37,8 @@ export default function Projects() {
               onClick={() => setActiveFilter(categoryMap[i])}
               className={`px-5 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
                 activeFilter === categoryMap[i]
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-lg shadow-blue-500/25'
-                  : 'text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-500/30'
+                  ? 'bg-slate-950 text-white dark:bg-white dark:text-slate-950'
+                  : 'text-slate-500 dark:text-slate-400 border border-slate-300 dark:border-slate-700 hover:border-teal-600 dark:hover:border-teal-400'
               }`}
             >
               {label}
@@ -56,18 +56,18 @@ export default function Projects() {
             >
               {/* Featured badge */}
               {project.featured && (
-                <div className="absolute top-4 right-4 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase bg-blue-600 text-white">
+                <div className="absolute top-4 right-4 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-teal-700 text-white">
                   {t.projects.featured}
                 </div>
               )}
 
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200/50 dark:border-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <i className={`fas ${project.icon} text-lg text-blue-500`} />
+              <div className="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
+                <i className={`fas ${project.icon} text-lg text-teal-700 dark:text-teal-400`} />
               </div>
 
               {/* Content */}
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
                 {project.title}
               </h3>
               <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4 flex-grow">{project.desc}</p>
@@ -91,7 +91,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+                    className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-teal-700 dark:hover:text-teal-400 transition-colors duration-300 font-medium"
                   >
                     <i className="fab fa-github" />
                     {t.projects.code}
@@ -102,7 +102,7 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
+                    className="flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-teal-700 dark:hover:text-teal-400 transition-colors duration-300 font-medium"
                   >
                     <i className="fas fa-external-link-alt text-xs" />
                     {t.projects.demo}

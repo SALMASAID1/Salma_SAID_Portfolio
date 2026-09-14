@@ -32,12 +32,12 @@ export default function Contact() {
                 rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
                 className="glass-card p-4 flex items-center gap-4 group"
               >
-                <div className="w-11 h-11 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200/50 dark:border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <i className={`fas ${link.icon} text-blue-500`} />
+                <div className="w-11 h-11 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0">
+                  <i className={`fas ${link.icon} text-teal-700 dark:text-teal-400`} />
                 </div>
                 <div className="min-w-0">
                   <p className="text-xs text-slate-400 dark:text-slate-500 font-medium">{link.label}</p>
-                  <p className="text-sm text-slate-700 dark:text-slate-300 truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <p className="text-sm text-slate-700 dark:text-slate-300 truncate group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
                     {link.value}
                   </p>
                 </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                   href={s.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-11 h-11 rounded-xl glass-card flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
+                  className="w-11 h-11 rounded-xl glass-card flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-teal-700 dark:hover:text-teal-400 transition-all duration-300 hover:-translate-y-1"
                 >
                   <i className={`${s.fab ? 'fab' : 'fas'} ${s.icon}`} />
                 </a>

@@ -35,11 +35,11 @@ export default function Certifications() {
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${cert.color} opacity-70 group-hover:opacity-100 transition-opacity`} />
 
                 {/* Badge icon */}
-                <div className="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200/50 dark:border-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <i className={`fas ${cert.icon} text-xl text-blue-500`} />
+                <div className="w-14 h-14 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
+                  <i className={`fas ${cert.icon} text-xl text-teal-700 dark:text-teal-400`} />
                 </div>
 
-                <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1 group-hover:text-teal-700 dark:group-hover:text-teal-400 transition-colors">
                   {cert.title}
                 </h3>
                 <p className="text-slate-500 dark:text-slate-400 text-sm mb-3">{cert.desc}</p>

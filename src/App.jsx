@@ -13,17 +13,9 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <AppProvider>
-      <div className="relative min-h-screen bg-slate-50 dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300">
-        {/* Subtle gradient blobs */}
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-blue-500/[0.06] dark:bg-blue-500/[0.04] blur-[100px]" />
-          <div className="absolute top-1/2 -left-40 w-[400px] h-[400px] rounded-full bg-slate-500/[0.04] dark:bg-slate-500/[0.03] blur-[100px]" />
-          <div className="absolute -bottom-40 right-1/3 w-[350px] h-[350px] rounded-full bg-blue-400/[0.04] dark:bg-blue-400/[0.03] blur-[100px]" />
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10">
-          <Navbar />
+      <div className="min-h-screen bg-[#f7f7f4] text-slate-900 transition-colors duration-300 dark:bg-[#0d1117] dark:text-slate-100">
+        <Navbar />
+        <main>
           <Hero />
           <About />
           <Experience />
@@ -32,8 +24,8 @@ export default function App() {
           <Education />
           <Certifications />
           <Contact />
-          <Footer />
-        </div>
+        </main>
+        <Footer />
       </div>
     </AppProvider>
   )

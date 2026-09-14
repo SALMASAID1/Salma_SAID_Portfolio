@@ -17,8 +17,8 @@ export const content = {
     hero: {
       greeting: "Hello, I'm",
       name: 'Salma SAID',
-      title: 'Data Engineering Student | Machine Learning & AI Enthusiast',
-      headline: 'Designing scalable data-driven systems from ingestion to real-time insights.',
+      title: 'Data Engineering & Artificial Intelligence Student',
+      headline: 'I build reliable data pipelines, intelligent systems, and decision tools that turn complex data into useful outcomes.',
       typingTitles: [
         'Data Engineering Student',
         'ML & AI Enthusiast',
@@ -31,14 +31,14 @@ export const content = {
       stats: [
         { value: '5+', label: 'Certifications', icon: 'fa-award' },
         { value: '8+', label: 'Projects', icon: 'fa-code-branch' },
-        { value: '2', label: 'Internships', icon: 'fa-briefcase' },
+        { value: '4', label: 'Internships', icon: 'fa-briefcase' },
       ],
     },
     about: {
       tag: 'About Me',
       title: 'About Me',
       summary: [
-        'I\'m a <strong>Data Engineering student</strong> at ENSA El Hoceima (2024–2027), specializing in building scalable, data-driven systems that transform raw data into actionable insights.',
+        'I\'m a final-year <strong>Data Engineering and Artificial Intelligence student</strong> at ENSA El Hoceima, focused on building scalable systems that transform raw data into actionable insights.',
         'My expertise spans <strong>machine learning</strong>, <strong>predictive modeling</strong>, <strong>data pipelines</strong>, <strong>distributed systems</strong>, and <strong>DevOps practices</strong> — enabling end-to-end solutions from data ingestion to real-time visualization.',
         'I\'m passionate about mastering the full data lifecycle, leveraging modern Big Data technologies and automation to deliver impactful, production-ready engineering projects.',
       ],
@@ -46,7 +46,7 @@ export const content = {
         { icon: 'fa-map-marker-alt', label: 'Location', value: 'El Jadida, Morocco' },
         { icon: 'fa-graduation-cap', label: 'University', value: 'ENSA El Hoceima' },
         { icon: 'fa-calendar-alt', label: 'Academic Year', value: '2024 — 2027' },
-        { icon: 'fa-language', label: 'Languages', value: 'Arabic, English, French, Spanish' },
+        { icon: 'fa-language', label: 'Languages', value: 'Arabic, English, French' },
       ],
     },
     experience: {
@@ -54,15 +54,35 @@ export const content = {
       title: 'Professional Experience',
       items: [
         {
+          title: 'Data Science & Business Intelligence Intern',
+          company: 'OCP Group / PMP · Jorf Lasfar, El Jadida',
+          date: 'Aug — Sep 2026',
+          focus: 'Spare-parts inventory decision support',
+          points: [
+            'Developed a Python decision-support pipeline using 1,591 SAP MM transactions across 603 spare-part items for ABC–XYZ segmentation, forecasting, anomaly detection, and replenishment risk analysis.',
+            'Designed a star-schema model and a six-page Power BI dashboard with 25 DAX measures, including automated data-quality checks.',
+          ],
+          tags: ['Python', 'Pandas', 'Power BI', 'DAX', 'SAP MM', 'Forecasting'],
+        },
+        {
+          title: 'AI & Data Engineering Project',
+          company: 'CMRPI · EMC Helpline, Kenitra',
+          date: 'Jul — Aug 2026',
+          focus: 'Multilingual cyberviolence support chatbot',
+          points: [
+            'Built a multilingual RAG chatbot supporting French, Arabic, and Moroccan Darija with a curated Morocco-specific legal, psychological, and emergency knowledge base.',
+            'Implemented crisis detection, adaptive responses, RTL support, and containerized deployment with a FastAPI backend validated by 158 passing tests.',
+          ],
+          tags: ['FastAPI', 'LangChain', 'Gemini', 'ChromaDB', 'RAG', 'React', 'Docker'],
+        },
+        {
           title: 'Data Scientist Intern',
-          company: 'OCP Group',
+          company: 'OCP Group · Jorf Lasfar, El Jadida',
           date: 'July 2025',
           focus: 'HR Predictive Analytics',
           points: [
-            'Built an employee attrition prediction system using ML models (Random Forest, Logistic Regression, K-Means)',
-            'Performed data preprocessing: cleaning, encoding, and normalization of HR features',
-            'Created visualizations and exploratory analyses to identify key attrition factors',
-            'Designed an interactive Streamlit dashboard for real-time prediction and HR decision support',
+            'Built an employee attrition pipeline using feature engineering, Logistic Regression, Random Forest, and K-Means clustering.',
+            'Created a Streamlit dashboard integrating two predictive models and one clustering model for real-time attrition predictions and HR analytics.',
           ],
           tags: ['Python', 'Scikit-learn', 'Streamlit', 'Random Forest', 'K-Means'],
         },
@@ -72,8 +92,8 @@ export const content = {
           date: 'Oct 2024',
           focus: 'Applied Data Science',
           points: [
-            'Applied machine learning techniques to solve real-world classification and prediction problems',
-            'Built and evaluated models using industry-standard workflows and best practices',
+            'Applied machine learning techniques to real-world classification and prediction problems.',
+            'Built and evaluated models using standard data-science workflows and best practices.',
           ],
           tags: ['Data Science', 'Machine Learning', 'Python', 'Remote'],
         },
@@ -364,8 +384,8 @@ export const content = {
     hero: {
       greeting: 'Bonjour, je suis',
       name: 'Salma SAID',
-      title: 'Étudiante en Data Engineering | Passionnée ML & IA',
-      headline: 'Conception de systèmes data évolutifs, de l\'ingestion aux insights en temps réel.',
+      title: 'Étudiante en Data Engineering & Intelligence Artificielle',
+      headline: 'Je conçois des pipelines de données fiables, des systèmes intelligents et des outils d’aide à la décision qui transforment les données complexes en résultats utiles.',
       typingTitles: [
         'Étudiante en Data Engineering',
         'Passionnée ML & IA',
@@ -378,14 +398,14 @@ export const content = {
       stats: [
         { value: '5+', label: 'Certifications', icon: 'fa-award' },
         { value: '8+', label: 'Projets', icon: 'fa-code-branch' },
-        { value: '2', label: 'Stages', icon: 'fa-briefcase' },
+        { value: '4', label: 'Stages', icon: 'fa-briefcase' },
       ],
     },
     about: {
       tag: 'À Propos',
       title: 'À Propos de Moi',
       summary: [
-        'Je suis <strong>étudiante en Data Engineering</strong> à l\'ENSA El Hoceima (2024–2027), spécialisée dans la construction de systèmes data évolutifs transformant les données brutes en insights exploitables.',
+        'Je suis étudiante en dernière année de <strong>Data Engineering et Intelligence Artificielle</strong> à l\'ENSA El Hoceima, spécialisée dans la conception de systèmes évolutifs transformant les données brutes en informations exploitables.',
         'Mon expertise couvre le <strong>machine learning</strong>, la <strong>modélisation prédictive</strong>, les <strong>pipelines de données</strong>, les <strong>systèmes distribués</strong> et les <strong>pratiques DevOps</strong> — permettant des solutions bout en bout.',
         'Passionnée par la maîtrise du cycle complet des données, j\'exploite les technologies Big Data modernes et l\'automatisation pour livrer des projets d\'ingénierie impactants.',
       ],
@@ -393,7 +413,7 @@ export const content = {
         { icon: 'fa-map-marker-alt', label: 'Localisation', value: 'El Jadida, Maroc' },
         { icon: 'fa-graduation-cap', label: 'Université', value: 'ENSA El Hoceima' },
         { icon: 'fa-calendar-alt', label: 'Année', value: '2024 — 2027' },
-        { icon: 'fa-language', label: 'Langues', value: 'Arabe, Anglais, Français, Espagnol' },
+        { icon: 'fa-language', label: 'Langues', value: 'Arabe, Anglais, Français' },
       ],
     },
     experience: {
@@ -401,26 +421,46 @@ export const content = {
       title: 'Expérience Professionnelle',
       items: [
         {
+          title: 'Stagiaire Data Science & Business Intelligence',
+          company: 'OCP Group / PMP · Jorf Lasfar, El Jadida',
+          date: 'Août — Sept 2026',
+          focus: 'Aide à la décision pour la gestion des pièces de rechange',
+          points: [
+            'Développement d’un pipeline Python d’aide à la décision à partir de 1 591 transactions SAP MM et 603 articles pour la segmentation ABC–XYZ, la prévision, la détection d’anomalies et l’analyse des risques de réapprovisionnement.',
+            'Conception d’un modèle en étoile et d’un tableau de bord Power BI de six pages avec 25 mesures DAX et des contrôles automatisés de qualité des données.',
+          ],
+          tags: ['Python', 'Pandas', 'Power BI', 'DAX', 'SAP MM', 'Prévision'],
+        },
+        {
+          title: 'Projet IA & Data Engineering',
+          company: 'CMRPI · EMC Helpline, Kénitra',
+          date: 'Juil — Août 2026',
+          focus: 'Chatbot multilingue de soutien contre la cyberviolence',
+          points: [
+            'Développement d’un chatbot RAG en français, arabe et darija marocaine, basé sur une base de connaissances juridique, psychologique et d’urgence adaptée au contexte marocain.',
+            'Mise en œuvre de la détection de crise, de réponses adaptatives, du support RTL et d’un déploiement conteneurisé, avec un backend FastAPI validé par 158 tests.',
+          ],
+          tags: ['FastAPI', 'LangChain', 'Gemini', 'ChromaDB', 'RAG', 'React', 'Docker'],
+        },
+        {
           title: 'Stagiaire Data Scientist',
-          company: 'OCP Group',
+          company: 'OCP Group · Jorf Lasfar, El Jadida',
           date: 'Juillet 2025',
           focus: 'Analyse Prédictive RH',
           points: [
-            'Développement d\'un système de prédiction de l\'attrition (Random Forest, Régression Logistique, K-Means)',
-            'Prétraitement : nettoyage, encodage et normalisation des caractéristiques RH',
-            'Analyses exploratoires et visualisations pour identifier les facteurs clés d\'attrition',
-            'Dashboard Streamlit interactif pour la prédiction en temps réel et aide à la décision RH',
+            'Développement d’un pipeline de prédiction de l’attrition avec feature engineering, régression logistique, Random Forest et clustering K-Means.',
+            'Création d’un tableau de bord Streamlit intégrant deux modèles prédictifs et un modèle de clustering pour les prédictions en temps réel et l’analyse RH.',
           ],
           tags: ['Python', 'Scikit-learn', 'Streamlit', 'Random Forest', 'K-Means'],
         },
         {
-          title: 'Stagiaire Data Scientist (Remote)',
+          title: 'Stagiaire Data Scientist à distance',
           company: 'CodSoft',
           date: 'Oct 2024',
-          focus: 'Science des Données Appliquée',
+          focus: 'Science des données appliquée',
           points: [
-            'Application de techniques ML pour résoudre des problèmes réels de classification et prédiction',
-            'Construction et évaluation de modèles selon les bonnes pratiques standards',
+            'Application de techniques de machine learning à des problèmes réels de classification et de prédiction.',
+            'Construction et évaluation de modèles selon les workflows et bonnes pratiques de la data science.',
           ],
           tags: ['Data Science', 'Machine Learning', 'Python', 'Remote'],
         },
