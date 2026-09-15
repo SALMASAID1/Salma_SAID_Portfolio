@@ -97,7 +97,7 @@ export default function Navbar() {
             <i className={`fas ${dark ? 'fa-sun' : 'fa-moon'} text-sm`} />
           </button>
           <a
-            href={lang === 'fr' ? "./salma-said-cv-fr.pdf" : "./salma-said-cv.pdf"}
+            href={lang === 'fr' ? "./CV_Salma_SAID_fr.pdf" : "./CV_Salma_SAID.pdf"}
             target="_blank"
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-lg bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-teal-700 dark:bg-white dark:text-slate-950 dark:hover:bg-teal-300 md:inline-flex"

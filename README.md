@@ -6,12 +6,13 @@ A modern, responsive portfolio built with **React 18 + Vite + Tailwind CSS**.
 
 ```
 portfoliosalmasaid/
-├── public/                     # Static assets (put your CV PDF here)
-│   └── salma-said-cv.pdf       # Your downloadable CV
+├── public/                     # Static résumé files
+│   ├── CV_Salma_SAID.pdf       # English résumé
+│   └── CV_Salma_SAID_fr.pdf    # French résumé
 ├── src/
 │   ├── components/             # React UI components
 │   │   ├── Navbar.jsx          # Navigation bar with lang/theme toggles
-│   │   ├── Hero.jsx            # Hero section with typing animation
+│   │   ├── Hero.jsx            # Introductory hero section
 │   │   ├── About.jsx           # About me section
 │   │   ├── Experience.jsx      # Work experience timeline
 │   │   ├── Projects.jsx        # Projects grid with filters
@@ -71,7 +72,7 @@ Simply edit the text values and the site updates automatically. No need to touch
 | Skills | `content.en.skills.categories` and `content.fr.skills.categories` |
 | Education | `content.en.education.items` and `content.fr.education.items` |
 | Certifications | `content.en.certifications.items` and `content.fr.certifications.items` |
-| CV Download | Put your PDF in `public/salma-said-cv.pdf` |
+| CV downloads | Replace `public/CV_Salma_SAID.pdf` and `public/CV_Salma_SAID_fr.pdf` |
 
 ## 🌐 Deployment
 
