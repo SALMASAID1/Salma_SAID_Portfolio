@@ -65,7 +65,7 @@ export const content = {
           tags: ['Python', 'Pandas', 'Power BI', 'DAX', 'SAP MM', 'Forecasting'],
         },
         {
-          title: 'AI & Data Engineering Project',
+          title: 'AI & Data Engineering Intern',
           company: 'CMRPI · EMC Helpline, Kenitra',
           date: 'Jul — Aug 2026',
           focus: 'Multilingual cyberviolence support chatbot',
@@ -432,7 +432,7 @@ export const content = {
           tags: ['Python', 'Pandas', 'Power BI', 'DAX', 'SAP MM', 'Prévision'],
         },
         {
-          title: 'Projet IA & Data Engineering',
+          title: 'Stagiaire en IA & Data Engineering',
           company: 'CMRPI · EMC Helpline, Kénitra',
           date: 'Juil — Août 2026',
           focus: 'Chatbot multilingue de soutien contre la cyberviolence',
